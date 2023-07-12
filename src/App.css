@@ -1,38 +1,241 @@
+html,
+body,
+#root,
 .App {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #d9e0eb;
+}
+
+.Navbar {
+  color: #ffffff;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  background-color: #00000081;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 22px;
+}
+
+.Name {
+  width: 100%;
+  text-align: center;
+  color: #000000;
+  font-family: 'Gambetta', serif;
+  font-style: italic;
+  color: #ffffff;
+  text-shadow: 3px 0px 7px rgba(99, 93, 93, 0.8), -3px 0px 7px rgba(22, 19, 7, 0.8), 0px 4px 7px rgba(29, 24, 10, 0.8);
+  margin-top: 4%;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.Intro {
+  height: 45%;
+  width: 100%;
+  top: 0%;
+  background-color: black;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 50px), 0 100%);
+  background-image: url('./assets/Intro03.jpg');
+  background-size: cover;
+  border: none;
+}
+
+.Subtext {
+  color: rgb(255, 255, 255);
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+}
+
+.pic-container {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 31%;
+}
+
+.centerPic {
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  image-rendering: -moz-crisp-edges;
+  /* Firefox */
+  image-rendering: -o-crisp-edges;
+  /* Opera */
+  image-rendering: -webkit-optimize-contrast;
+  /* Webkit (non-standard naming) */
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
+  /* IE (non-standard property) */
+}
+
+.Summary {
+  color: #130a03;
+  text-align: center;
+  margin-top: 80px;
+  font-style: italic;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.Summary>p {
+  max-width: 800px;
+}
+
+.resume-section {
+  margin-top: 30px;
+  width: 100%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.resume-button {
+  align-items: center;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 18px;
+  border: none;
+  background-color: #343E47;
+  color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 0.7em 1.4em 0.7em 1.1em;
+  letter-spacing: 0.05em;
+  border-radius: 20em;
+  cursor: pointer;
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.resume-button:hover {
+  color: #000000;
+  background-color: #d9e0eb;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Socials {
+  width: 100%;
+  text-align: center;
+}
+
+.Socials>p:first-child {
+  color: #000000;
+  font-size: 20px;
+}
+
+/* Style all font awesome icons */
+.Socials .fa {
+  margin-left: 10px;
+  padding: 10px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 20%;
+}
+
+.social-icons {
   display: flex;
-  flex-direction: column;
+  width: 100%;
+  text-align: center;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.fa-linkedin {
+  background: #0a56ad;
+  color: white;
+}
+
+.fa-github {
+  background: #000000;
+  color: white;
+}
+
+.blogger-icon {
+  height: 60px;
+  width: 60px;
+  margin-left: 5px;
+  margin-right: -5px;
+  background-size: cover;
+  background-image: url("https://img.icons8.com/color/48/blogger.png");
+}
+
+.blogger-icon:hover {
+  opacity: 0.7;
+}
+
+/* Instagram */
+.fa-instagram {
+  color: white;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+@media only screen and (max-width: 550px) {
+  .App{
+    background-color: palegoldenrod;
   }
-  to {
-    transform: rotate(360deg);
+
+  .resume-button {
+    background-color: rgb(24, 13, 4);
+  }
+
+  .resume-button:hover {
+    color: #000000;
+    background-color: palegoldenrod;
+  }
+
+  .Name {
+    margin-top: 25%;
+    font-size: 50px;
+    font-weight: 600;
+    animation: fadeInTopLeft;
+    animation-duration: 3s;
+  }
+
+  .Subtext {
+    font-size: 30px;
+    animation: fadeInBottomRight;
+    animation-duration: 3s;
+  }
+
+  .Navbar {
+    font-size: 25px;
+    animation: fadeInDown;
+    animation-duration: 1.5s;
+  }
+
+  .Intro {
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 40px), 50% 100%, 0 calc(100% - 40px));
+    background-image: url('./assets/Intro01.jpg');
+    height: 45%;
+  }
+
+  .centerPic {
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .pic-container {
+    top: 35%;
   }
 }
