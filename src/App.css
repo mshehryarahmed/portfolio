@@ -190,7 +190,11 @@ body,
 }
 
 @media only screen and (max-width: 550px) {
-  .App{
+
+  html,
+  body,
+  #root,
+  .App {
     background-color: palegoldenrod;
   }
 
@@ -204,21 +208,23 @@ body,
   }
 
   .Name {
-    margin-top: 25%;
-    font-size: 50px;
+    margin-top: 20%;
+    font-size: 40px;
     font-weight: 600;
+    color: palegoldenrod;
+    text-shadow: 3px 0px 7px rgba(0, 0, 0, 0.8), -3px 0px 7px rgba(22, 19, 7, 0.8), 0px 4px 7px rgba(29, 24, 10, 0.8);
     animation: fadeInTopLeft;
     animation-duration: 3s;
   }
 
   .Subtext {
-    font-size: 30px;
+    font-size: 22px;
     animation: fadeInBottomRight;
     animation-duration: 3s;
   }
 
   .Navbar {
-    font-size: 25px;
+    font-size: 22px;
     animation: fadeInDown;
     animation-duration: 1.5s;
   }
@@ -230,12 +236,22 @@ body,
   }
 
   .centerPic {
-    width: 150px;
+    width: 100px;
     height: auto;
     object-fit: cover;
   }
 
   .pic-container {
-    top: 35%;
+    top: 38%;
+  }
+
+  .Socials .fa {
+    margin-left: 10px;
+    padding: 10px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20%;
   }
 }
