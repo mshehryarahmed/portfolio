@@ -25,7 +25,7 @@ function App() {
       <div className='Summary'>
         <p>
           <q>
-            I am a passionate software engineer with a focus on full-stack web development. I have experience in planning, designing, and developing applications to meet client requirements. My interests also include quantum computers and the potential of artificial intelligence and machine learning. I have developed novel applications and models in these areas. ReactJS is my preferred JavaScript framework.
+            I am a passionate Software Engineer with a focus on full-stack web development. I have experience in planning, designing, and developing applications to meet client requirements. My interests also include quantum computers and the potential of artificial intelligence and machine learning. I have developed novel applications and models in these areas. ReactJS is my preferred JavaScript framework.
           </q>
         </p>
       </div>
